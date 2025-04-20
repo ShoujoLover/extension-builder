@@ -32,7 +32,7 @@ jobs:
         run: |
           set -e
           if [[ -z "${{ env.REPO }}" ]]; then
-            echo "REPO=${{ github.repository_owner }}/aniyomi-extensions" >> $GITHUB_ENV
+            echo "REPO=${{ github.repository_owner }}/extensions-source" >> $GITHUB_ENV
           fi
       - name: Clone Repository (Latest)
         uses: actions/checkout@v4
