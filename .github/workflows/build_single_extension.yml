@@ -10,12 +10,12 @@ on:
         description: Target extension name
         required: true
       git-repo:
-        description: Git repo (Optional, defaults to <your name>/aniyomi-extensions
+        description: Git repo (Optional, defaults to <your name>/extensions-source
         default: ''
         required: false
       git-ref:
         description: Git Ref (Optional, defaults to master)
-        default: 'master'
+        default: 'main'
         required: false
 
 env:
