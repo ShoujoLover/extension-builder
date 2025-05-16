@@ -50,7 +50,7 @@ jobs:
       - name: Build APK
         env:
           CI: false
-        run: ./gradlew -p src ${{ env.EXTSLUG }}:assembleDebug
+        run: chmod +x gradlew && ./gradlew -p src ${{ env.EXTSLUG }}:assembleDebug
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
